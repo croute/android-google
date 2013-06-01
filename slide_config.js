@@ -27,7 +27,7 @@ var SLIDE_CONFIG = {
     gplus: 'https://plus.google.com/113131691466488717287/posts',
     twitter: '@croute17',
     www: 'http://croute.me',
-    github: 'http://croute.github.io/io-slides/#1'
+    github: 'http://croute.github.io/croute-slides/#1'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
