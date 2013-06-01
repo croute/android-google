@@ -44,342 +44,1142 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets</h2>
+      <h2>What is Google Play Services?</h2>
     </hgroup>
-    <article>
-      <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
-          <ul>
-            <li>Subtitle capitalization is title case</li>
-          </ul>
-        </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
-      </ul>
+    <article class="flexbox vcenter">
+      <img src="./images/google_play_services/services_app_logo.png" >
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>What is Google Play Services?</h2>
     </hgroup>
     <article>
-      <p>A list where items build:</p>
+      <p>안드로이드 폰에서</p>
       <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
+        <li>어느 순간부터 안드로이드 폰에 설치되어있는 애플리케이션</li>
+        <li>지워도 다시 설치되는 지울 수 없는 녀석</li>
+        <li>실행할수도 없는 녀석(애플리케이션 목록에도 없다니..)</li>
+        <img src="./images/google_play_services/drawer.png" width="145" height="253">
       </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
+    </article>
+  </slide>
+
+  <slide> 
+    <hgroup>
+      <h2>What is Google Play Services?</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <ul>
+        <img src="./images/google_play_services/single_library.png" width="760" height="424">        
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
+      <h2>What is Google Play Services?</h2>
     </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
+    <article>      
+      <ul class="build">
+        <li>구글 플레이 서비스는 단일 라이브러리로, 모든 구글 서비스 API를 사용</li>
+        <li>안드로이드 디바이스 버전은 2.2이거나 그보다 높아야 한다.</li>
+        <li>OS 버전이나, 통신사 배포 버전에 따른 디바이스 지원에 대한 걱정 없이 개발 가능!</li>
+        <li>15번째 Major release! 아마 대단히 효율적일걸?</li>
       </ul>
     </article>
   </slide>
 
   <slide hidden>
-    Hidden slides are left out of the presentation.
+    <ul>
+      <li>구글 플레이 서비스는 싱글 라이브러리로 디바이스의 하나의 플레이스에서 모든 구글 서비스 API를 가져다 함께 사용할 수 있다. </li>
+      <li>안드로이드 디바이스 버전은 2.2이거나 그보다 높아야 한다.</li>
+      <li>이건 당신의 애플리케이션과 우리 애플리케이션을 디바이스 지원에 대한 걱정없이 개발할 수 있다는 걸 의미한다.</li>
+      <li>이번이 우리의 열다섯번째 구글 플레이 서비스 메이저 배포이고, 우리는 이 배포가 대단히 효율적일 것이라고 본다.</li>    
+    </ul>
+  </slide>
+
+  <slide>
+    <aside class="note">
+      <section>
+        <ul>
+          <img src="./images/google_play_services/oauth2.png">  
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What is Google Play Services?</h2>
+    </hgroup>
+    <article>      
+      <p>Google Play Services</p>
+      <ul class="build">
+        <li>Google+, Google+ Sign-in, Maps & MapFragment v2, OAuth 2</li>        
+      </ul>
+      <br/>
+      <p>OAuth, Authentication(인증)</p>
+      <ul class="build">
+        <li>구글 플레이 서비스 라이브러리를 통해</li>
+        <li>우리가 가진 모든 디바이스에서 구글 서비스에 액세스 하기 위한</li>
+        <li>단 하나의 authorization(권한부여) API를 제공함</li>
+        <br/>
+        <li>유저는 지속적인 방법으로</li>
+        <li>구글 서비스를 위한</li>
+        <li>OAuth Access token 을 받게됨</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide> 
+    <aside class="note">
+      <section>
+        <ul>
+          <img src="./images/google_play_services/play-services-diagram.png">  
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What is Google Play Services?</h2>
+    </hgroup>
+    <article>      
+      <p>구글 플레이 서비스는 항상 최신이어야 한다!</p>
+      <ul class="build">
+        <li>최신! 구글 플레이 서비스의 핵심 ~.~</li>        
+        <li>구글 플레이 서비스의 Bug fix, Update 를 할때~</li>
+        <li>안드로이드 프레임워크의 배포와 상관없이, </li>
+        <li>통신사의 배포 스케줄이랑 상관없이!</li>
+        <br/>
+        <li><b>구글 플레이 스토어</b>를 통해서 업데이트 됨!</li>
+        <li>자동으로 됨!</li>
+        <li>지워도 소용없음!</li>
+        <li>안드로이드 2.2 이상이면 다 됨!</li>
+      </ul>
+      <br/>      
+    </article>
+  </slide>
+
+  <slide> 
+    <aside class="note">
+      <section>
+        <ul>
+          <img src="./images/google_play_services/play-services-diagram.png">  
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What is Google Play Services?</h2>
+    </hgroup>
+    <article>      
+      <img src="./images/google_play_services/play-service-update.png" width="927" height="561"> 
+    </article>
+  </slide>
+
+  <slide>
+      <aside class="note">
+      <section>
+        <ul>
+          <img src="./images/google_play_services/devices.png" width="546" height="322">  
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Android 2.2 and above</h2>
+    </hgroup>    
+    <article>      
+      <p>왜 안드로이드 2.2, 또는 그 이상버전이어야 하지?</p>
+      <ul class="build">
+        <li>안드로이드 2.2 이상 버전, 현재 98.2%</li>        
+        <li>플레이 스토어어는 2.2 부터 지원함</li>
+        <li>플레이 스토어를 hit 하는 유저 비율은 계속 상승~</li>
+        <li>프로요에는 Mass storage(SD Card)에 앱 설치 가능(정말로 편리한 API 추가됨)</li>
+        <li>플레이 서비스를 사용하는 대부분 앱 Mass storage 에 저장하고있고,<br/>지금은 아니라도 아마 사용하게 될걸?</li>
+      </ul>
+      <br/>      
+    </article>
+  </slide>
+
+  <slide>
+    <aside class="note">
+      <section>
+        <ul>
+          <img src="./images/google_play_services/devices.png" width="546" height="322">  
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Android Support Library vs Google Play Services</h2>
+      <h3>왜 둘다 가지고 가는 걸까?</h3>
+    </hgroup>    
+    <article>      
+      <p>Google Play Services</p>
+      <ul class="build">
+        <li>구글 플레이 서비스는, 플레이 이코시스템을 서포트</li>        
+        <li>우리가 API 를 사용할 수 있도록 해줌</li>        
+      </ul>
+      <p>Android Support Library</p>
+      <ul class="build">
+        <li>안드로이드 개발자와 안드로이드 이코시스템을 위한,</li>        
+        <li>오픈 소스 라이브러리!</li>        
+        <li>우리가 만드는 애플리케이션/소스코드에 포함</li>
+        <li>쓰고 싶은 모든 디바이스에서 쓰면 됨!</li>        
+      </ul>
+      <br/>      
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What's New</h2>    
+      <h3>Location-based service</h3>  
+    </hgroup>    
+    <article class="flexbox vcenter">
+      <ul>
+        <img src="./images/google_play_services/location_based_services.png" >
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What's New</h2>    
+      <h3>Location-based service</h3>  
+    </hgroup>    
+    <article>
+      <ul>
+        <li>Fused Location Provider</li>
+        <li>Geofencing API</li>
+        <li>Activity Recognition</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What's New</h2>    
+      <h3>Location-based service</h3>  
+    </hgroup>    
+    <article>
+      <ul class="build">
+        <li>기존의 MapFragment & Map v2 에 있는 것들뿐 아니라,</li>
+        <li>로케이션을 디텍트 하는 능력 향상!</li>
+        <li>'짱짱맨'이 되었음!</li>
+        <li>우리 대신 힘든 일을 해줄 Fused Location Provider 가 있음!</li>                
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What's New</h2>    
+      <h3>Location-based service</h3>  
+    </hgroup>    
+    <article>
+      <p>지겹고 힘든일은 내가 대신한다(feat. 로케이션 팀)</p>
+      <ul class="build">        
+        <li>정확한 위치를 찾기 위한 엄청 기~인 코드들이 필요</li>
+        <li>이런 지겨운건 화면 뒤로~</li>
+        <li>이런 힘든건 Fused Location Provider 뒤로~</li>
+        <br/>
+        <li>Provider 상태를 자동으로 디텍팅</li>         
+        <li>Provider는 특정시간(interval 등)에 Best result 를 나한테 던져줌</li>         
+        <li>Hard work는 전부 대신해줌</li>         
+        <li>실제 사용하는 것도 나이스하고 쉬움</li>         
+      </ul>
+    </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Location-based service</h2>    
+      <h3>Connect to the Location Services Client</h3>  
     </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
+      <pre class="prettyprint" data-lang="in Activity">
+private void connectLBS() {
+  int gpsExists = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+  if (gpsExists == ConnectionResult.SUCCESS) {
+    mLocationClient = new LocationClient(this, this, this);
+    mLocationClient.connect();
   }
-&lt;/script&gt;
+}
+
+@Override
+private void onConnected(Bundle connectionHint) {
+  requestUpdates(mLocationClient);
+}
 </pre>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
+      <h2>Location-based service</h2>    
+      <h3>Location Update Request</h3>  
     </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
+      <pre class="prettyprint" data-lang="in Activity">
+LocationRequest request = LocationRequest.create();
+request.setInterval(minTime);
+request.setPriority(lowPowerMoreImporantThanAccuracy?
+  LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY :
+  LocationRequest.PRIORITY_HIGH_ACCURACY);
+
+mLocationClient.requestLocationUpdates(request, new LocationListener() {
+  @Override
+  public void onLocationChanged(Location location) {
+    updateLocation(location);
+  }
+});
+</pre>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Location-based service</h2>    
+      <h3>Fused Location Provider</h3>
+    </hgroup>    
+    <article>      
+      <p>대신 다 일해주겠어</p>
+      <ul class="build">           
+        <li>넌 나한테 interval 만 주면 돼</li>        
+        <li>minimum / maximum</li>        
+        <br/>
+        <li>우선순위도 말해줄래?</li>         
+        <li>할 수 있는한 가장 정확한 결과를 원하는지,</li>         
+        <li>아니면, 배터리를 가능한한 오래 지속시키기를 원하는지~</li>                        
+        <li>것도 아니면, 균형잡힌 방법을 찾아서 시도해 줄까?</li>              
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Location-based service</h2>    
+      <h3>Fused Location Provider</h3>
+    </hgroup>    
+    <article>      
+      <p>Fused Location Provider 의 장점</p>
+      <ul class="build">           
+        <li>네가 뭘 선택했던 상관없지</li>
+        <li>항상 최소한의 배터리로</li>        
+        <li>가장 정확한 결과를 얻으려고 시도하니까!</li>                
+        <br/>
+        <li>한가지 설정(Interval ?)만 했다면~</li>
+        <li>코드를 다시 컴파일 할 필요도 없고,</li>
+        <li>아무것도 하지 않아도,</li>
+        <li>유저들의 디바이스에 푸시 할 수 있으니까.</li>        
+        <br/>
+        <li>그리고 매 릴리즈 마다 계속해서 더 효율적이고, <br/>더 정확한 결과를 만들어 내려고 시도할거니까~</li>        
+      </ul>      
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Location-based service</h2>    
+      <h3>Geofencing API</h3>
+    </hgroup>    
+    <article>      
+      <ul class="build">     
+        <li>근접 경보 처럼 동작</li>            
+        <li>모든 애플리케이션에서 모든 Geofence 를 추적</li>                    
+        <li>경계 안으로 들어오거나 밖으로 나갈때, 자동으로 트리거~</li>            
+        <li>Central Fused Location Provider 에서 처리해줌</li>     
+        <li>각각의 Geofence 경계에서 얼마나 멀리떨어졌나에 기반해서,</li>            
+        <li>우리가 사용해야할 provider 를 알아내는 방식</li>                   
+        <li>GPS, Wi-fi, 3g/4g 상관없이, 모든 컨텍스트 정보를 취할 수 있는 장점~</li>            
+      </ul>      
+    </article>
+  </slide>
+
+  <!-- codes -->
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Location-based service</h2>    
+      <h3>Activity Recognition</h3>
+    </hgroup>    
+    <article>      
+      <ul class="build">                 
+      </ul>      
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Activity Recognition</h2>    
+      <h3></h3>  
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="in Activity">
+Intent intent = new Intent(this, ActivityRecognitionService.class);
+intent.setAction(MyActivity.ACTION_STRING);
+
+PendingIntent pi = PendingIntent.getService(this, 0, intent,
+                      PendingIntent.FLAG_UPDATE_CURRENT);
+
+mActivityRecognitionClient.requestActivityUpdate(interval, pi);
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Activity Recognition</h2>    
+      <h3></h3>  
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="ActivityRecognitionIntentService">
+@Override
+protected void onHandleIntent(Intent intent) {
+  if (intent.getAction() == MyActivity.ACTION_STRING) {
+    ActivityRecognitionResult result = ActivityRecognitionResult.extractResult(intent);
+    DetectedActivity detectedActivity = result.getMostProbableActivity();
+    int activityType = detectedActivity.getType();
+    if (activityType == DetectedActivity.STILL) {
+      setUpdateSpeed(PAUSED);
+    } else if (ativityType == DetectedActivity.IN_VEHICLE) {
+      setUpdateSpeed(FATER);
+    } else {
+      setUpdateSpeed(REGULAR);
+    }
   }
 }
 </pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
-</pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
-</pre>
     </article>
   </slide>
 
-  <slide>
+
+  <slide>   
     <aside class="note">
       <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
+        <ul> 
+        </ul>        
       </section>
     </aside>
     <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
+      <h2>Activity Recognition</h2>    
+      <h3>유저의 현재 활동에 따라 전혀 다른 UX를 제공할 수 있다.</h3>
+    </hgroup>    
     <article>
-      <p>Press 'p' to toggle speaker notes.</p>
+      <ul class="build">     
+        <li>계속 서있고, 움직이지 않으면 pause 상태 > 업데이트 disable</li>                            
+        <li>자전거를 탄다고 판단될때 > 업데이트 disable</li>            
+        <li>차 안이라면 > 업데이트 faster</li>            
+        <li>승객이라면 근처 맛있는 식당등을 찾으려고 할수도 있고,</li>            
+        <li>스포츠 점수, 뉴스앱, 유저가 움직이지않고 서있다면 빠른 업데이트를 원할수도~</li>
+        <br/>
+        <li>새로운 API, 좋은 기회! 생각을 머리속에서 꺼내자~</li>                  
+        <li>지금까지와는 완전히 다른 새로운 앱, 효율적인 앱을 만드는데 활용해보자~</li>        
+      </ul>      
     </article>
   </slide>
 
-  <slide>
+  <!-- codes -->
+
+  <slide>   
     <aside class="note">
       <section>
-        <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
+        <ul> 
+        </ul>        
       </section>
     </aside>
     <hgroup>
-      <h2>Presenter Mode</h2>
-    </hgroup>
-    <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
+      <h2>What's New</h2>    
+      <h3>Game Services</h3>
+    </hgroup>    
+    <article class="flexbox vcenter">
+      <ul>
+        <img src="./images/google_play_services/game_services.png" >
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Competition</h3>
+    </hgroup>    
+    <article>      
+      <ul class="build">    
+        <li>모든것은 경쟁이 있을 때 더 나아진다.</li>
+        <img class="flexbox vcenter" src="./images/google_play_services/game_services_competition.png" >
+      </ul>      
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Google developers console</h3>
+    </hgroup>    
+    <article>      
+      <ul class="build">    
+        <li>새로운 기능들을 내가 다 관리해야 되는거야?</li>
+        <br />
+        <li>물론,</li>
+        <li>아니다.</li>
+      </ul>      
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Google developers console</h3>
+    </hgroup>    
+    <article >      
+         <img src="./images/google_play_services/game_service_01.png" >
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <img src="./images/google_play_services/game_service_03.png" >      
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Google developers console</h3>
+    </hgroup>    
+    <article >      
+         <img src="./images/google_play_services/game_service_02.png" >
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <img src="./images/google_play_services/game_service_04.png" >
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Google developers console</h3>
+    </hgroup>    
+    <article >      
+         <img src="./images/google_play_services/game_service_02.png" >
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+         <img src="./images/google_play_services/game_service_06.png" >
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Google developers console</h3>
+    </hgroup>    
+    <article >      
+         <img src="./images/google_play_services/game_service_05.png" >
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <img src="./images/google_play_services/game_service_09.png" >        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Achievement</h3>
+    </hgroup>    
+    <article>      
+      <ul class="build">
+        <li>실제 게임 내에서는 기본 형태(default look and feel)로 제공하고,</li>
+        <li>나타날때는 작은 다이얼로그로 나타나고, 전체 성과 화면을 볼수도 있다.</li>        
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Leaderboards</h3>
+    </hgroup>    
+    <article>      
+      <img src="./images/google_play_services/game_service_10.png" >
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <img src="./images/google_play_services/game_service_08.png" >        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Cloud save</h3>      
+    </hgroup>    
+    <article>            
+      <ul class="build">
+        <li>원래는..</li>
+        <li>4개의 128K 데이터 블럭을 사용할 수 있다.</li>
+        <li>덩치 큰 데이터들을 저장할 만큼은 제공되지 않는다.</li>      
+        <li>Cloud save 를 통해, 이런 갈등을 해결 할 수 있다.</li>        
+        <li>자세한건 다른 세션을 참고...</li>  
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3></h3>
+    </hgroup>    
+    <article>      
+         <img src="./images/google_play_services/game_service_07.png" >
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Game Services</h2>    
+      <h3>Other sessions</h3>
+    </hgroup>    
+    <article>      
+      <ul>
+        <li><a href="https://developers.google.com/events/io/sessions/324858737"><b>New Developments in Mobile Gaming</b></a></li>        
+        <li>Todd Kerpelman, Steve Martin, David Santoro</li>
+        <br/>
+        <li><b>An Introduction to Play games services</b></li>
+        <li>Todd Kerpelman, Steve Martin, David Santoro</li>
+        <br/> 
+        <li><a href="https://developers.google.com/events/io/sessions/326445164"><b>Advanced Games Development Topics</b></a></li>
+        <li>Tom Wilson, Bruno Oliveira</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>What's New</h2>    
+      <h3>Google Cloud Messaging</h3>
+    </hgroup>    
+    <article >      
+         <img src="./images/google_play_services/google_cloud_messaging.png" width="751" height="459" >
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Google Cloud Messaging</h2>  
+    </hgroup>    
+    <article >      
+      <ul>
+        <li>내 서버와 GCM 서버에 지속가능한 XMPP 커넥션을 만들 수 있다.</li>
+        <li>예전처럼 어떤 커넥션을 만들고 유지할 필요 없이도</li>
+        <li>디바이스에서 내 서버로 메시지를 보낼 수 있게 됐단 것!</li>
+        <li>low latency / high reliability connection</li>
+        <br/>
+        <li>나는 디바이스가 많아.</li>
+        <li>푸시가 왔네? 노티피케이션이 떠있어.</li>
+        <li>swipe~ 해도 다른 디바이스엔 그대로네?</li>
+        <li>유저가 처리할 수 있다는 액션만 주면,</li>
+        <li>한번에 모든 디바이스에서 노티, 없어진다!</li>
+      </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Image</h2>
+      <h2>Activity Recognition</h2>    
+      <h3></h3>  
     </hgroup>
     <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+      <pre class="prettyprint" data-lang="in service">
+GoogleCloudMessaging gcm = GoogleCloudMessaging.get(context);
+gcm.send(to, msgId, data);
+</pre>
+      <ul class="build">
+        <li>만약 원하는경우, 이걸 다른 디바이스에 전송할수도 있다.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Google Wallet</h2>    
+    </hgroup>    
+    <article >      
+         <img src="./images/google_play_services/google_wallet.png" >
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
+      <h2>How to use Google Play Services</h2>
     </hgroup>
     <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+      <img src="./images/google_play_services/services_app_logo.png" >
     </article>
   </slide>
 
   <slide>
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
     <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Android SDK Manager</h3>
+    </hgroup>    
+    <article class="flexbox vcenter">
+      <ul>        
+        <img src="./images/google_play_services/sdk_manager_open.png" >
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Extras > Google Play Services check! > Install</h3>
+    </hgroup>    
+    <article class="flexbox vcenter">
+      <ul>
+        <img src="./images/google_play_services/sdk_manager_download.png" >
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Google Play Services Library</h3>
+    </hgroup>    
+    <article class="flexbox vcenter">
+      <ul>
+        <img src="./images/google_play_services/directories.png" >
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Import library project(google-play-services_lib)</h3>
+    </hgroup>    
+    <article class="flexbox vcenter">
+      <ul>
+        <img src="./images/google_play_services/import_project_copy.png" >
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Reference library project</h3>
+    </hgroup>    
     <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+      <ul>
+        <img src="./images/google_play_services/properties_reference_library.png" >
+      </ul>
     </article>
   </slide>
 
-  <slide>
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
     <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Google APIs Console</h3>
+    </hgroup>    
     <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+      <ul>
+        <img src="./images/google_play_services/google_api_console_01.png" >
+      </ul>
     </article>
   </slide>
 
-  <slide>
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
     <hgroup>
-      <h2>Slide Styles</h2>
-    </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
-        <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
-        </ul>
-        <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
-        </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
-    </article>
-  </slide>
-
-  <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
-    <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
-    </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
-
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Iframe</h2>
-    </hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Google APIs Console</h3>
+    </hgroup>    
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
+      <ul>
+        <img src="./images/google_play_services/google_api_console_02.png" >
+      </ul>
     </article>
   </slide>
 
-  <slide>
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>How to use Google Play Services</h2>
+      <h3>Google APIs Console</h3>
+    </hgroup>    
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
+      <ul>
+        <li><a href="https://code.google.com/apis/console/">Google APIs Console</a></li>
+      </ul>
     </article>
   </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>How to use Google Play Services</h2>      
+    </hgroup>    
+    <article >
+      <pre class="prettyprint" data-lang="AndroidManifest.xml">
+  &lt;application ...>
+
+  &lt;meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="your_api_key" />  
+
+  &lt;/application>
+</pre>
+    </article>
+  </slide>  
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2><font color="red">Auth</font>entication vs <font color="blue">Auth</font>orization</h2>
+      <h3></h3>
+    </hgroup>    
+    <article class="build">
+      <p>Authentication</p>
+      <ul>
+        <li>party(3rd party)를 안전하게 실별하는 것</li>        
+        <li>내 폰에 있는 Google account 는 authenticattion.</li>        
+      </ul>
+      <p>Authorization</p>
+      <ul>
+        <li>인증된 파티에서 서비스에 액세스하기 위한 것</li>        
+        <li>구글 플레이 서비스를 이용할때는 authorization.</li>   
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2><font color="red">Auth</font>entication vs <font color="blue">Auth</font>orization</h2>
+      <h3></h3>
+    </hgroup>    
+    <article class="build">
+      <p>Google Play Services</p>
+      <ul>
+        <li>authenticated account 을 위한,</li>
+        <li>표준화된 authorization 을 제공한다.</li>        
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Authorization</h2>
+      <h3>Choose an Account</h3>
+    </hgroup>    
+    <article class="build">
+      <pre class="prettyprint" data-lang="">
+startActivityForResult(
+  AccountPicker.newChooseAccountIntent(null, null
+    new String[]{GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE},
+    true, "Can haz token plz?",
+    null, null, null) REQUEST_PICK_ACCOUNT);
+</pre>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Google Play Services</h2>
+      <h3>Preflight Check</h3>
+    </hgroup>    
+    <article >
+      <pre class="prettyprint" data-lang="">
+@Override
+protected void onResume() {
+  super.onResume();
+  int canIPlay = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+}
+</pre>
+      <ul>
+        <li><b>Result Codes:</b></li>
+        - SUCCESS <br/>
+        - SERVICE_MISSING <br/>
+        - SERVICE_VERSION_UPDATE_REQUIRED <br/>
+        - SERVICE_DISABLED <br/>
+        - SERVICE_INVALID <br/>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Google Play Services</h2>
+      <h3>Obtain an Access Token</h3>
+    </hgroup>    
+    <article >
+      <pre class="prettyprint" data-lang="">
+mToken = GoogleAuthUtil.getToken(this, "yhwoo.croute@gmail.com",
+  "oauth2:"
+  + Scopes.PLUS_PROFILE + " "
+  + YouTubeScopes.YOUTUBE_READONLY);
+</pre>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Google Play Services</h2>
+      <h3>Access the data</h3>
+    </hgroup>    
+    <article >
+      <pre class="prettyprint" data-lang="">
+Url url = new URL("https://googleapis.com/oauth2/v1/userinfo?access_token=" + token);
+
+...
+</pre>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Google Play Services</h2>
+      <h3>Adding a +1 button</h3>
+    </hgroup>    
+    <article >
+      <pre class="prettyprint" data-lang="Layout xml">
+&lt;com.google.android.gms.plus.PlusOneButton
+  android:id="@+id/plus_button"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  plus:annotation="inline"
+  plus:size="standard" />
+</pre>
+
+<pre class="prettyprint" data-lang="Activity/Fragment">
+PlusOneButton button = (PlusOneButton) findViewById(R.id.plus_button);
+button.initialize(mPlusClient, "http://croute.me", null);
+</pre>
+    </article>
+  </slide>
+
+  <slide>   
+    <aside class="note">
+      <section>
+        <ul> 
+        </ul>        
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Google Play Services</h2>
+      <h3>References</h3>
+    </hgroup>    
+    <article >
+      <ul>
+        <li><a href="http://www.youtube.com/watch?v=49pWckcaZEI">What's New in Google Play Services</a></li>
+        <li><a href="http://developer.android.com/google/play-services/index.html">Google Play Services</a></li>
+        <li><a href="http://developer.android.com/google/play-services/setup.html">Setup Google Play Services SDK</a></li>
+      </ul>
+    </article>
+  </slide>
+
 
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
+      <p>지... 질문 있으신가요?</p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
